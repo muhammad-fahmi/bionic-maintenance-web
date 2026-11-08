@@ -7,9 +7,7 @@ use App\Models\User;
 use App\Models\WorkOrder;
 use Illuminate\Support\Facades\Route;
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::redirect('/', '/login');
 
 Route::middleware(['auth', 'verified'])->group(function () {
     // Shared Dashboard redirector
