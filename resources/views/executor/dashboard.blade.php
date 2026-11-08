@@ -8,7 +8,7 @@
     <div class="py-12">
         <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
             @if (session('status'))
-                <div class="mb-4 font-medium text-sm text-green-600">
+                <div class="mb-4 font-medium text-sm text-green-600 dark:text-green-400">
                     {{ session('status') }}
                 </div>
             @endif
@@ -57,7 +57,7 @@
                                                         <x-primary-button class="text-xs py-1">Start Work</x-primary-button>
                                                     </form>
                                                 @else
-                                                    <a href="{{ route('executor.work-orders.execute', $wo) }}" class="inline-flex items-center px-4 py-2 bg-indigo-600 border border-transparent rounded-md font-semibold text-xs text-white uppercase tracking-widest hover:bg-indigo-700 active:bg-indigo-900 focus:outline-none focus:border-indigo-900 focus:ring ring-indigo-300 disabled:opacity-25 transition ease-in-out duration-150">
+                                                    <a href="{{ route('executor.work-orders.execute', $wo) }}" class="inline-flex items-center px-4 py-2 bg-indigo-600 border border-transparent rounded-md font-semibold text-xs text-white uppercase tracking-widest hover:bg-indigo-700 active:bg-indigo-900 focus:outline-none focus:border-indigo-900 focus:ring ring-indigo-300 dark:focus:border-indigo-500 dark:focus:ring-indigo-300 disabled:opacity-25 transition ease-in-out duration-150">
                                                         Update Activities
                                                     </a>
                                                 @endif
